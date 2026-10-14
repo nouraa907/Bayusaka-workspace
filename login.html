@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk | Bayusaka Workspace</title>
+    <link rel="stylesheet" href="style.css">
+    <script>window.PUBLIC_PAGE = true;</script>
+    <script src="script.js"></script>
+</head>
+
+<body class="login-page">
+
+    <section class="login-side">
+        <div class="login-logo">
+            <img src="https://bayusaka.com/wp-content/uploads/2021/08/LOGO-BAYUSAKA-1.png" alt="Logo PT Bayusaka Delta Buwana" class="logo-img"
+     onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <span class="logo-fallback">B</span>
+        </div>
+        <h1>BAYUSAKA</h1>
+        <p class="login-company">PT BAYUSAKA DELTA BUWANA</p>
+        <p class="login-tagline">Contraktor &amp; Service<br>Workspace internal untuk konten, project, dan koordinasi tim.</p>
+    </section>
+
+    <section class="login-main">
+        <div class="login-card">
+            <h2>Selamat Datang</h2>
+            <p class="login-sub">Masuk untuk membuka workspace Anda.</p>
+
+            <div class="tabs">
+                <button type="button" class="tab active" data-tab="login">Masuk</button>
+                <button type="button" class="tab" data-tab="register">Daftar</button>
+            </div>
+
+            <form id="login-form" class="auth-form">
+                <label>Username
+                    <input type="text" name="username" required autocomplete="username">
+                </label>
+                <label>Password
+                    <input type="password" name="password" required autocomplete="current-password">
+                </label>
+                <button type="submit" class="btn">Masuk</button>
+            </form>
+
+            <form id="register-form" class="auth-form" hidden>
+                <label>Nama Lengkap
+                    <input type="text" name="name" required>
+                </label>
+                <label>Username
+                    <input type="text" name="username" required placeholder="contoh: budi.santoso">
+                </label>
+                <label>Password
+                    <input type="password" name="password" required placeholder="Minimal 6 karakter">
+                </label>
+                <label>Konfirmasi Password
+                    <input type="password" name="confirm" required>
+                </label>
+                <button type="submit" class="btn">Buat Akun</button>
+            </form>
+
+            <p id="auth-message" class="auth-message"></p>
+        </div>
+    </section>
+
+</body>
+</html>

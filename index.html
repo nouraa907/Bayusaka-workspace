@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Bayusaka Workspace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="logo-box">
+                <img src="https://bayusaka.com/wp-content/uploads/2021/08/LOGO-BAYUSAKA-1.png" alt="Logo PT Bayusaka Delta Buwana" class="logo-img"
+     onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                <span class="logo-fallback">B</span>
+            </div>
+            <div class="brand-text">
+                <h2>BAYUSAKA</h2>
+                <p>DELTA BUWANA</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html" class="nav-link active"><span>Dashboard</span><span class="nav-badge" id="nav-badge" hidden></span></a>
+            <a href="content.html" class="nav-link"><span>Instagram Content Monitoring</span></a>
+            <a href="projects.html" class="nav-link"><span>Project &amp; Deadline Monitoring</span></a>
+            <a href="communication.html" class="nav-link"><span>Internal Communication</span></a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="user-box">
+                <div class="user-avatar" id="user-avatar">U</div>
+                <div class="user-info">
+                    <strong id="user-name">-</strong>
+                    <span id="user-username"></span>
+                </div>
+            </div>
+            <button type="button" class="btn-logout" id="logout-btn">Keluar</button>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="page-header">
+            <p class="subtitle">PT BAYUSAKA DELTA BUWANA</p>
+            <h1>Dashboard</h1>
+            <p id="today-date"></p>
+        </header>
+
+        <section class="welcome">
+            <h2>Halo, <span id="greet-name"></span></h2>
+            <p id="welcome-text"></p>
+        </section>
+
+        <div id="alert-box" class="alert" hidden></div>
+
+        <section class="stats">
+            <div class="stat">
+                <span class="stat-number" id="stat-content">0</span>
+                <span class="stat-label">Konten Instagram</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="stat-projects">0</span>
+                <span class="stat-label">Total Project</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="stat-active">0</span>
+                <span class="stat-label">Project Belum Selesai</span>
+            </div>
+            <div class="stat stat-danger">
+                <span class="stat-number" id="stat-urgent">0</span>
+                <span class="stat-label">Deadline Mendesak</span>
+            </div>
+        </section>
+
+        <section class="dash-grid">
+
+            <div class="panel">
+                <h2>Pengingat Deadline &amp; Jadwal</h2>
+                <ul class="reminder-list" id="reminder-list"></ul>
+            </div>
+
+            <div class="dash-side">
+                <div class="panel">
+                    <h2>Progres Project</h2>
+                    <div class="progress"><div class="progress-fill" id="progress-fill"></div></div>
+                    <p class="progress-text" id="progress-text">0% project selesai</p>
+                    <div class="counts">
+                        <div class="count"><strong id="count-belum">0</strong><span>Belum Mulai</span></div>
+                        <div class="count"><strong id="count-proses">0</strong><span>Proses</span></div>
+                        <div class="count"><strong id="count-selesai">0</strong><span>Selesai</span></div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h2>Catatan Terbaru</h2>
+                    <ul class="recent-list" id="recent-comm"></ul>
+                </div>
+            </div>
+
+        </section>
+
+        <h2 class="section-title">Modul Workspace</h2>
+
+        <section class="cards">
+            <a href="content.html" class="card">
+                <h3>Instagram Content</h3>
+                <p>Monitor ide, produksi, dan jadwal konten Instagram.</p>
+                <span class="card-link">Buka halaman</span>
+            </a>
+            <a href="projects.html" class="card">
+                <h3>Projects &amp; Deadlines</h3>
+                <p>Pantau progres pekerjaan, PIC, dan deadline project.</p>
+                <span class="card-link">Buka halaman</span>
+            </a>
+            <a href="communication.html" class="card">
+                <h3>Internal Communication</h3>
+                <p>Catat arahan, hasil meeting, dan koordinasi tim.</p>
+                <span class="card-link">Buka halaman</span>
+            </a>
+        </section>
+
+        <footer>&copy; 2026 PT Bayusaka Delta Buwana. All rights reserved.</footer>
+
+    </main>
+
+</body>
+</html>

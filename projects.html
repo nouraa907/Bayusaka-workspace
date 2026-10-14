@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects &amp; Deadlines | Bayusaka Workspace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body data-store="projects">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="logo-box">
+                <img src="https://bayusaka.com/wp-content/uploads/2021/08/LOGO-BAYUSAKA-1.png" alt="Logo PT Bayusaka Delta Buwana" class="logo-img"
+     onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                <span class="logo-fallback">B</span>
+            </div>
+            <div class="brand-text">
+                <h2>BAYUSAKA</h2>
+                <p>DELTA BUWANA</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html" class="nav-link"><span>Dashboard</span><span class="nav-badge" id="nav-badge" hidden></span></a>
+            <a href="content.html" class="nav-link"><span>Instagram Content Monitoring</span></a>
+            <a href="projects.html" class="nav-link active"><span>Project &amp; Deadline Monitoring</span></a>
+            <a href="communication.html" class="nav-link"><span>Internal Communication</span></a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="user-box">
+                <div class="user-avatar" id="user-avatar">U</div>
+                <div class="user-info">
+                    <strong id="user-name">-</strong>
+                    <span id="user-username"></span>
+                </div>
+            </div>
+            <button type="button" class="btn-logout" id="logout-btn">Keluar</button>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="page-header">
+            <p class="subtitle">PT BAYUSAKA DELTA BUWANA</p>
+            <h1>Project &amp; Deadline Monitoring</h1>
+            <p>Pantau progres pekerjaan, PIC, dan deadline project.</p>
+        </header>
+
+        <section class="panel">
+            <h2>Tambah Project</h2>
+            <form id="entry-form">
+                <div class="form-grid">
+                    <label>Nama Project
+                        <input type="text" name="project" required>
+                    </label>
+                    <label>PIC
+                        <input type="text" name="pic" required>
+                    </label>
+                    <label>Deadline
+                        <input type="date" name="deadline" required>
+                    </label>
+                    <label>Status
+                        <select name="status">
+                            <option>Belum Mulai</option>
+                            <option>Proses</option>
+                            <option>Selesai</option>
+                        </select>
+                    </label>
+                    <label>Catatan
+                        <textarea name="catatan"></textarea>
+                    </label>
+                </div>
+                <button type="submit" class="btn">Simpan Project</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Daftar Project</h2>
+            <div class="table-wrap">
+                <table id="entry-table">
+                    <thead>
+                        <tr>
+                            <th data-field="project">Project</th>
+                            <th data-field="pic">PIC</th>
+                            <th data-field="deadline">Deadline</th>
+                            <th data-field="status">Status</th>
+                            <th data-field="catatan">Catatan</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="entry-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>&copy; 2026 PT Bayusaka Delta Buwana. All rights reserved.</footer>
+
+    </main>
+
+</body>
+</html>
